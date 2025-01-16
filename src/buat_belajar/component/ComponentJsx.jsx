@@ -2,7 +2,7 @@ import '../styling/style.css'
 
 function Card({character}){
   return(
-    <div style={{marginTop: '0', border: 'solid'}}>
+    <div className="card" style={{marginTop: '0', border: 'solid'}}>
       <h4 style={{fontWeight: 'bold'}}>{character.name}</h4>
       <ul className="border-solid" >
         <li>Role: {character.role}</li>
@@ -15,22 +15,23 @@ function Card({character}){
 export default function Profile(){
   return(
     <>
-      <h1 className="header" style={{margin: '0', padding: '0', boxSizing: 'border-box'}}>Brutal Legends Characters</h1>
-      <Card  character={{
+      {/* <h1 className="header" style={{margin: '0', padding: '0', boxSizing: 'border-box'}}>Brutal Legends Characters</h1> */}
+      <Card className="card" character={{
         name: 'Kaguwir',
         role: 'Human',
         team: 'Asgard'
       }} />
-      <Card character={{
+      <Card className="card" character={{
         name: 'Noya',
         role: 'Angel of Righteousness',
         team: 'Cahaya'
       }} />
-      <Card character={{
+      <Card className="card" character={{
         name: 'Ubi',
         role: 'Sang Penghancur Dunia',
         team: 'Ragnarok'
       }} />
+      <p>i made this using JSX. i suck at react styling thx</p>
     </>
   )
 }
