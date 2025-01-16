@@ -1,6 +1,6 @@
-import { getImageUrl } from "./utils";
+import { getImageUrl } from "./utils.js";
 
-function Avatar({character, size = 50}){
+function Avatar({character}){
   return(
     <>
       <section>
@@ -8,8 +8,8 @@ function Avatar({character, size = 50}){
           className="avatar bg-blue-500 text-white p-4 text-center w-auto m-10 rounded-xl"
           src={getImageUrl(character)}
           alt={character.name}
-          width={size} 
-          height={size} 
+          // width={size} 
+          // height={size} 
         />
       </section>
 
@@ -24,11 +24,11 @@ export default function ProfileCard(){
       <div>
         <Avatar character={{
           name: 'Narendra melotot',
-          imageId: ' (2)'
+          imageId: 'narendra'
         }} />
         <Avatar character={{
           name: 'Kaguwir Melotot',
-          imageId: ' (2)'
+          imageId: 'kaguwir'
         }} />
       </div>
     </>
