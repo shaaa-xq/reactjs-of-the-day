@@ -15,7 +15,7 @@ function Card({character}){
 export default function Profile(){
   return(
     <>
-      {/* <h1 className="header" style={{margin: '0', padding: '0', boxSizing: 'border-box'}}>Brutal Legends Characters</h1> */}
+      <h1 className="header" style={{margin: '0', padding: '0', boxSizing: 'border-box', textAlign: 'center', fontWeight: 'bold'}}>Brutal Legends Characters</h1>
       <Card className="card" character={{
         name: 'Kaguwir',
         role: 'Human',
@@ -31,7 +31,7 @@ export default function Profile(){
         role: 'Sang Penghancur Dunia',
         team: 'Ragnarok'
       }} />
-      <p>i made this using JSX. i suck at react styling thx</p>
+      {/* <p>i made this using JSX. i suck at react styling thx</p> */}
     </>
   )
 }

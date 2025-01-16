@@ -4,14 +4,16 @@ body{
   box-sizing: border-box;
 }
 
-.header{
+/* .header{
   margin-top: 0;
-  /* background-color: blue; */
-}
+  background-color: blue;
+} */
 
 .card{
-  margin-bottom: 20px;
+  margin: 20px;
   border-radius: 20px;
+  padding: 10px;
+
 }
 
 h4, li{
