@@ -3,36 +3,36 @@ import { useState, useEffect } from "react";
 // import '../..index.css'
 
 // with dependency
-// function WithDependency(){
-//   const [count, setCount] = useState(0);
+function WithDependency(){
+  const [count, setCount] = useState(0);
 
-//   useEffect(() => {
-//     console.log(`Count updated: ${count}`)
-//   }, [count]);
-
-//   return(
-//     <div className="grid place-content-center mt-40">
-//       <button className="rounded-full bg-sky-400" onClick={() => setCount(count + 1)}>Count</button>
-//       <p>Count: {count}</p>
-//     </div>
-//   )
-// }
-
-// export default WithDependency;
-
-// without dependency
-function WithoutDependency(){
-  
   useEffect(() => {
-    console.log('Komponen ini dirender sekali')
-  }), [];
+    console.log(`Count updated: ${count}`)
+  }, [count]);
 
   return(
-    <h1>Komponen ini hanya dirender sekali!</h1>
-  );
+    <div className="grid place-content-center mt-40">
+      <button className="rounded-full bg-sky-400" onClick={() => setCount(count + 1)}>Count</button>
+      <p>Count: {count}</p>
+    </div>
+  )
 }
 
-export default WithoutDependency;
+export default WithDependency;
+
+// without dependency
+// function WithoutDependency(){
+  
+//   useEffect(() => {
+//     console.log('Komponen ini dirender sekali')
+//   }), [];
+
+//   return(
+//     <h1>Komponen ini hanya dirender sekali!</h1>
+//   );
+// }
+
+// export default WithoutDependency;
 
 // cleanup effect
 // function CleanupEffect(){

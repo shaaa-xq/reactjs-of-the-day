@@ -1,19 +1,34 @@
-import { getCoverUrl } from "./utils.js"
-import { songs } from "./data.js"
+// import { getCoverUrl } from "./utils.jsx"
+// import { songs } from "./data.jsx"
 
-export default function ListRendering(){
-  const listSongs = songs.map(song => {
-    <li key={songs.id}>
-      <img 
-        src={getCoverUrl(song)} 
-        alt={song.name} />
-      <p>
-        <b>{song.name}</b>
-        Artist: {song.artist}
-      </p>
-    </li>
-  })
+const songs = [{
+  id: 0,
+  name: 'With',
+  artist: 'Kim Tae Ri, Nam Joo Hyuk, Bona, Choi Hyun Wook, Lee Joo Myung'
+}, {
+  id: 1,
+  name: 'Loving Machine',
+  artist: 'TV Girl'
+}, {
+  id: 2,
+  name: 'Twilight',
+  artist: 'Amarynn, Burek'
+}]
+
+function ListOfSongs(){
   return(
-    <ul>{listSongs}</ul>
+    <div>
+      <h2>List of Songs</h2>
+      <ul>{songs.map(song => 
+        <li key={song.id}>
+          <p style={{border: 'solid', marginBottom: '20px'}}>
+            <b>{song.name}</b>
+            <p>Artist: {song.artist}</p>
+          </p>
+        </li>
+      )}</ul>
+    </div>
   )
 }
+
+export default ListOfSongs;
