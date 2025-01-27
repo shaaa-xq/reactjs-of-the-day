@@ -6,14 +6,20 @@ import Counter from "./UseState2";
 import ShowDetail from "./UseState2";
 import Form from "./UseState2";
 import ToDo from "./UseState2";
+import CatFacts from "./UseEffect";
+import CounterApp from "./UseEffect";
+import CleanBackground from "./UseEffect";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <TodoApp /> */}
-    {/* <InputName /> */}
+    <InputName />
     {/* <Counter /> */}
     {/* <ShowDetail /> */}
     {/* <Form /> */}
-    <ToDo />
+    {/* <ToDo /> */}
+    {/* <CatFacts /> */}
+    {/* <CounterApp /> */}
+    {/* <CleanBackground /> */}
   </StrictMode>
 )
