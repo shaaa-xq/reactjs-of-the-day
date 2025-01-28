@@ -102,39 +102,39 @@ import { useState } from 'react'
 //   )
 // }
 
-// export default function ToDo(){
-//   const [todo, setTodo] = useState('')
-//   const [todoArray, setTodoArray] = useState([])
-//   let nextId = 0
+export default function ToDo(){
+  const [todo, setTodo] = useState('')
+  const [todoArray, setTodoArray] = useState([])
+  let nextId = 0
 
-//   function addTodo(){
-//     setTodoArray([
-//       ...todoArray,
-//       {id: nextId++, todo: todo}
-//     ])
-//   }
+  function addTodo(){
+    setTodoArray([
+      ...todoArray,
+      {id: nextId++, todo: todo}
+    ])
+  }
 
-//   return(
-//     <>
-//       <div>
-//         <input 
-//           type="text" 
-//           onChange={e => {
-//             setTodo(e.target.value)
-//           }}
-//         />
-//         <button onClick={addTodo}>
-//           Add Task
-//         </button>
-//       </div>
-//       <ul>
-//         {todoArray.map(task => (
-//           <li key={task.id}>{task.todo}</li>
-//         ))}
-//       </ul>
-//     </>
-//   )
-// }
+  return(
+    <>
+      <div>
+        <input 
+          type="text" 
+          onChange={e => {
+            setTodo(e.target.value)
+          }}
+        />
+        <button onClick={addTodo}>
+          Add Task
+        </button>
+      </div>
+      <ul>
+        {todoArray.map(task => (
+          <li key={task.id}>{task.todo}</li>
+        ))}
+      </ul>
+    </>
+  )
+}
 
 // export default function StudentsData(){
 //   const [student, setStudent]
