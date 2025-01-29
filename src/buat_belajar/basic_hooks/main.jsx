@@ -16,6 +16,7 @@ import FocusToInput from "./UseRef";
 import SaveValue from "./UseRef";
 import TotalPrice from "./UseMemo";
 import Stopwatch from "./UseRef";
+import FilterName from "./UseMemo";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -34,7 +35,7 @@ createRoot(document.getElementById('root')).render(
     {/* <SaveValue /> */}
     {/* <MultipleCounter /> */}
     {/* <TotalPrice /> */}
-    <Stopwatch />
-
+    {/* <Stopwatch /> */}
+    <FilterName />
   </StrictMode>
 )
