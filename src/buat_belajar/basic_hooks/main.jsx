@@ -15,6 +15,7 @@ import MultipleCounter from "./UseCallback";
 import FocusToInput from "./UseRef";
 import SaveValue from "./UseRef";
 import TotalPrice from "./UseMemo";
+import Stopwatch from "./UseRef";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -29,9 +30,11 @@ createRoot(document.getElementById('root')).render(
     {/* <CleanBackground /> */}
     {/* <CounterCallback /> */}
     {/* <SearchName /> */}
-    <FocusToInput />
+    {/* <FocusToInput /> */}
     {/* <SaveValue /> */}
     {/* <MultipleCounter /> */}
     {/* <TotalPrice /> */}
+    <Stopwatch />
+
   </StrictMode>
 )
