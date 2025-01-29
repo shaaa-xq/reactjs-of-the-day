@@ -71,68 +71,68 @@ import { useState, useMemo } from 'react'
 //   )
 // }
 
-export default function FilterName(){
-  const [newName, setNewName] = useState('')
-  const [names, setNames] = useState(["Kirman", "Ubi", "Narendra", "Ana", "Kaguwir", "Ikkan"])
+// export default function FilterName(){
+//   const [newName, setNewName] = useState('')
+//   const [names, setNames] = useState(["Kirman", "Ubi", "Narendra", "Ana", "Kaguwir", "Ikkan"])
 
-  function handleAddName(){
-    if(newName.trim() !== ""){
-      setNames([...names, newName])
-      setNewName('')
-    } else{
-      alert("Name can't be blank")
-    }
-  }
+//   function handleAddName(){
+//     if(newName.trim() !== ""){
+//       setNames([...names, newName])
+//       setNewName('')
+//     } else{
+//       alert("Name can't be blank")
+//     }
+//   }
 
-  const filterLengthName = useMemo(() => {
-    return names.filter((x) => x.length > 4)
-  }, [names])
+//   const filterLengthName = useMemo(() => {
+//     return names.filter((x) => x.length > 4)
+//   }, [names])
 
-  return(
-    <>
-      <input 
-        type="text" 
-        placeholder="Add new name"
-        value={newName}
-        onChange={(e) => 
-          setNewName(e.target.value)}
-      />
-      <button
-        onClick={handleAddName}
-      >Submit</button>
+//   return(
+//     <>
+//       <input 
+//         type="text" 
+//         placeholder="Add new name"
+//         value={newName}
+//         onChange={(e) => 
+//           setNewName(e.target.value)}
+//       />
+//       <button
+//         onClick={handleAddName}
+//       >Submit</button>
 
-      <h3>All Names</h3>
-      <ul>
-        {names.map((allName, index) => (
-          <li key={index}>{allName}</li>
-        ))}
-      </ul>
+//       <h3>All Names</h3>
+//       <ul>
+//         {names.map((allName, index) => (
+//           <li key={index}>{allName}</li>
+//         ))}
+//       </ul>
 
-      <h3>Filtered Name</h3>
-      <ul>
-        {filterLengthName.map((filteredName, index) => (
-          <li key={index}>{filteredName}</li>
-        ))}
-      </ul>
-    </>
-  )
-}
+//       <h3>Filtered Name</h3>
+//       <ul>
+//         {filterLengthName.map((filteredName, index) => (
+//           <li key={index}>{filteredName}</li>
+//         ))}
+//       </ul>
+//     </>
+//   )
+// }
 
 
-export default function SortNumber(){
-  const [numbers, setNumbers] = useState([5, 3, 8, 1, 9])
-  const [newNumber, setNewNumber] = useState('')
+// export default function SortNumber(){
+//   const [numbers, setNumbers] = useState([5, 3, 8, 1, 9])
+//   const [newNumber, setNewNumber] = useState('')
 
-  function handleAddNumber(){
-    if(newNumber.trim() != ''){
-      setNumbers([...numbers, newNumber])
-      setNewNumber('')
-    }
-  }
+//   function handleAddNumber(){
+//     if(newNumber.trim() != ''){
+//       setNumbers([...numbers, newNumber])
+//       setNewNumber('')
+//     }
+//   }
 
-  return(
-    <>
-      input
-    </>
-  )
-}
+//   return(
+//     <>
+//       input
+//     </>
+//   )
+// }
