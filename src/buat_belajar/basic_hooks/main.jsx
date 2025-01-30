@@ -16,7 +16,7 @@ import { createRoot } from "react-dom/client";
 // import SaveValue from "./UseRef";
 // import TotalPrice from "./UseMemo";
 // import Stopwatch from "./UseRef";
-// import FilterName from "./UseMemo";
+import FilterName from "./UseMemo";
 // import CounterWithReducer from "./UseReducer";
 import TodoReducerApp from "./UseReducer";
 import ShoppingApp from "./UseReducer";
@@ -39,9 +39,9 @@ createRoot(document.getElementById('root')).render(
     {/* <MultipleCounter /> */}
     {/* <TotalPrice /> */}
     {/* <Stopwatch /> */}
-    {/* <FilterName /> */}
+    <FilterName />
     {/* <CounterWithReducer /> */}
     {/* <TodoReducerApp /> */}
-    <ShoppingApp />
+    {/* <ShoppingApp /> */}
   </StrictMode>
 )

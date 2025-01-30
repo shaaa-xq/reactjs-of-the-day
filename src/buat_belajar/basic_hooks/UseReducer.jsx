@@ -27,16 +27,16 @@ import { useState, useReducer } from "react";
 // }
 
 
-function TodoReducer(state, action){
-  switch (action.type) {
-    case "ADD_TODO":
-      return [...state, {id: Date.now(), text: action.payload}]
-    case "REMOVE_TODO":
-      return state.filter((task) => task.id != action.payload)
-    default:
-      return state
-  }
-}
+// function TodoReducer(state, action){
+//   switch (action.type) {
+//     case "ADD_TODO":
+//       return [...state, {id: Date.now(), text: action.payload}]
+//     case "REMOVE_TODO":
+//       return state.filter((task) => task.id != action.payload)
+//     default:
+//       return state
+//   }
+// }
 
 // export default function TodoReducerApp(){
 //   const [newTask, setNewTask] = useState('')
@@ -45,6 +45,7 @@ function TodoReducer(state, action){
 //   function handleAddTask(){
 //     if(newTask.trim() != ""){
 //       dispatch({type: "ADD_TODO", payload: newTask})
+//       setNewTask('')
 //     } else{
 //       alert("Task can't be blank")
 //     }

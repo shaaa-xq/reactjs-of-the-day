@@ -1,24 +1,21 @@
 import { useContext } from "react";
-// import {ThemeProvider} from "../contexts/ThemeProvider";
-import ThemeContext from "../contexts/ThemeContext";
+import { ThemeContext } from "../contexts/ThemeProvider";
+import ThemeToggle from "./ThemeSwitcher";
 
 const Header = () => {
-  const {theme, toggleTheme} = useContext(ThemeContext)
+  const {theme} = useContext(ThemeContext)
 
   return(
-    <div style={{backgroundColor: theme === "light" ? "#ffff" : "333", color: theme === "light" ? "333" : "#ffff"}}>
-      <h1>Ini Header</h1>
-      <button onClick={toggleTheme}>Toggle</button>
-    </div>
+    <>
+      <header style={{backgroundColor: theme === 'light' ? '#fff' : '#333',
+        color: theme === 'light' ? '#333' : '#fff'
+      }}
+        className="header">
+        <h2>Ini header</h2>
+        <ThemeToggle />
+      </header>
+    </>
   )
 }
-
-// const Header = () => {
-//   return(
-//     <ThemeProvider>
-//       <ThemedHeader />
-//     </ThemeProvider>
-//   )
-// }
 
 export default Header
